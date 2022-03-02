@@ -24,8 +24,8 @@ int main()
 	
 	// Showing options
 	printf("\nOptions:\n");
-	printf("\n 1 - Sum");
-	printf("\n 2 - Subtraction");
+	printf("\n1 - Sum");
+	printf("\n2 - Subtraction");
 	printf("\nEnter your desired option number: ");
 	scanf("%d", &option);
 
