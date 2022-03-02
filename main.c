@@ -5,6 +5,12 @@ float sum(float n1, float  n2)
 	return (n1+n2);
 }
 
+
+float subtraction(float n1, float  n2)
+{
+	return (n1-n2);
+}
+
 int main()
 {
 	float num1, num2;
@@ -17,8 +23,9 @@ int main()
 	scanf("%f", &num2);
 	
 	// Showing options
-	printf("Options:\n");
+	printf("\nOptions:\n");
 	printf("\n 1 - Sum");
+	printf("\n 2 - Subtraction");
 	printf("\nEnter your desired option number: ");
 	scanf("%d", &option);
 
@@ -27,6 +34,12 @@ int main()
 		// Showing result for sum
 		printf("\nFinal result = %.2f\n", sum(num1,num2));
 
+	}
+
+	else if(option == 2)
+	{
+		// Showing result for subtraction
+		printf("\nFinal result = %.2f\n", subtraction(num1,num2));
 	};
 	
 	return 0;
