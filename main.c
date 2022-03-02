@@ -16,6 +16,10 @@ float multiplication(float n1, float n2)
 	return (n1*n2);
 }
 
+float division(float n1, float n2)
+{
+	return (n1/n2);
+}
 int main()
 {
 	float num1, num2;
@@ -32,6 +36,7 @@ int main()
 	printf("\n1 - Sum");
 	printf("\n2 - Subtraction");
 	printf("\n3 - Multiplication");
+	printf("\n4 - Division");
 	printf("\nEnter your desired option number: ");
 	scanf("%d", &option);
 
@@ -52,6 +57,12 @@ int main()
 	{
 		// Showing result for multiplication
 		printf("\nFinal result = %.2f\n", multiplication(num1,num2));
+	}
+
+	else if(option == 4)
+	{
+		// Showing result for division
+		printf("\nFinal result = %.2f\n", division(num1,num2));
 	};
 
 	return 0;
