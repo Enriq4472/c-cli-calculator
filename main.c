@@ -40,30 +40,27 @@ int main()
 	printf("\nEnter your desired option number: ");
 	scanf("%d", &option);
 
-	if(option == 1)
+	switch(option)
 	{
-		// Showing result for sum
+		case (1):
 		printf("\nFinal result = %.2f\n", sum(num1,num2));
-
-	}
-
-	else if(option == 2)
-	{
-		// Showing result for subtraction
+		break;
+		
+		case (2):
 		printf("\nFinal result = %.2f\n", subtraction(num1,num2));
-	}
+		break;
 
-	else if(option == 3)
-	{
-		// Showing result for multiplication
+		case (3):
 		printf("\nFinal result = %.2f\n", multiplication(num1,num2));
-	}
+		break;
 
-	else if(option == 4)
-	{
-		// Showing result for division
+		case (4):
 		printf("\nFinal result = %.2f\n", division(num1,num2));
-	};
+		break;
 
+		default:
+		printf("\nInvalid option.\n");
+
+	}
 	return 0;
 }
